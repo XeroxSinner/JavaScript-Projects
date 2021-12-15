@@ -22,8 +22,8 @@ This repository includes all projects and work in progress done for TA's JavaScr
 ##  <h3>Project2_functions</h3>
   - Basic Assignment work for JavaScript module
 
-  ## <h3>Project3_math_operators</h3>
+## <h3>Project3_math_operators</h3>
   - Basic Assignment work for Javascript module relating to math operations
   
-  ##<h3>Project4_dictionaries</h3>
+##<h3>Project4_dictionaries</h3>
   - Basic Assignment work for Javascript modlue relating to dictionaries/KVPs
