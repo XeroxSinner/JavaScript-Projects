@@ -45,5 +45,6 @@ function fixed(){
 
 //valueOf Method (167) - Noted on W3 that it's not normally used in code, 
 function valueof(){
-
+    var a = 'This is a primitive string, valueOf will not change it.';
+    document.getElementById('value').innerHTML = a.valueOf();
 }
