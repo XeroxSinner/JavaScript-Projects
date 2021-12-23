@@ -1,5 +1,8 @@
+//Defines Player Variables
 let activePlayer = 'X';
 let selectedSquares = [];
+
+//X or O placement, Images and Audio for markers identified
 function placeXorO(squareNumber) {
     if (!selectedSquares.some(element => element.includes(squareNumber))) {
         let select = document.getElementById(squareNumber);
@@ -23,7 +26,7 @@ function placeXorO(squareNumber) {
         }
         return true;
     }
-
+//Computers turn, based on pure random number generation
     function computersTurn() {
         let success = false;
         let pickASquare;
@@ -37,6 +40,7 @@ function placeXorO(squareNumber) {
     }
 }
 
+//Funciton defining win conditions
 function checkWinConditions() {
          if (arrayIncludes('0X','1X','2X')) { drawWinLine(50,100,558,100) }
     else if (arrayIncludes('3X','4X','5X')) { drawWinLine(50,304,558,304) }
@@ -67,16 +71,19 @@ function checkWinConditions() {
     }
 }
 
+//Forces click slow-down, disables click-ability for 1s
 function disableClick() {
     body.style.pointerEvents = 'none';
     setTimeout(function() {body.style.pointerEvents = 'auto';}, 1000);
 }
 
+//Defines audio function
 function audio(audioURL) {
     let audio = new Audio(audioURL);
     audio.play();
 }
 
+//Drawing function for win lines in reference to HTML 'canvas'
 function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
     const canvas = document.getElementById('win-lines')
     const c = canvas.getContext('2d');
@@ -106,7 +113,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
             if (x >= x2 && y <= y2) { cancelAnimationFrame(animationLoop); }
         }
     }
-
+//Clears line on win
     function clear() {
         const animationLoop = requestAnimationFrame(clear);
         c.clearRect(0,0,608,608);
@@ -118,6 +125,7 @@ function drawWinLine(coordX1, coordY1, coordX2, coordY2) {
     setTimeout(function () { clear(); resetGame(); }, 1000);
 }
 
+//Resets game
 function resetGame() {
     for (let i = 0; i < 9; i++) {
         let square = document.getElementById(String(i))
