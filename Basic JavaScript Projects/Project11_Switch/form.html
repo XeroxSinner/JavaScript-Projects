@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form Project</title>
+        <script src="./JS/form.js"></script>
+        <link rel="stylesheet" type="text/css" href="./CSS/form.css">
+    </head>
+
+    <body onload="setup()">
+    
+        <h2>A Basic Form</h2>
+        <form name='myform' action="">
+            <label for='fname'>First Name:</label><br>
+            <input type="text" id='fname' name='fname' value='Name'><br>
+            <label for='lname'>Last Name:</label><br>
+            <input type="text" id='lname' name="lname" value="Name"><br>
+            <p>Pick one:</p>
+            <input type="radio" id='pdog' name="pet" value="pdog">
+            <label for="pdog">Dog</label><br>
+            <input type="radio" id='pcat' name='pet' value='pcat'>
+            <label for="pcat">Cat</label><br>    
+            <input type="submit" value="submit">
+        </form>
+    
+    </body>
+</html>

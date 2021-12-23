@@ -1,0 +1,51 @@
+body {
+    margin: 02%;
+    background-color: black;
+}
+
+input[type=text] {
+    width: 30%;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-family: 'raleway', sans-serif;
+}
+
+input[type=text]:hover {
+    box-shadow: 0 0 5px turquoise inset;
+}
+
+label, h2, p {
+    font-family: 'raleway', sans-serif;
+    color: turquoise;
+    font-size: 18px;
+}
+
+input[type=radio] {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-family: 'raleway', sans-serif;
+}
+
+input[type=submit] {
+    background-color: turquoise;
+    color: #fff;
+    font-weight: bolder;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: 'raleway', sans-serif;
+}
+
+input[type=submit]:hover {
+    background-color: #fff;
+    color: turquoise;
+    transform: scale(1.1);
+    transition: transform .5s;
+}
+
