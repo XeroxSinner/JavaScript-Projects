@@ -1,3 +1,4 @@
+//Defines constant 'calculator' to hold values
 const calculator = {
     display_value: '0',
     first_operand: null,
@@ -5,6 +6,7 @@ const calculator = {
     operator: null,
 };
 
+// Handles display_value and behaviors associated with. 
 function input_digital(digit) {
     const { display_value, wait_second_operand } = calculator;
     if (wait_second_operand === true) {
@@ -15,6 +17,7 @@ function input_digital(digit) {
     }
 }
 
+// Handles decimal points and if accidentally clicked, doesn't cause errors in operation
 function input_decimal(dot) {
     if (calculator.wait_second_operand === true) return;
     if (!calculator.display_value.includes(dot)) {
@@ -22,6 +25,7 @@ function input_decimal(dot) {
     }
 }
 
+//Operators - Defines first and second operand values
 function handle_operator(next_operator) {
     const { first_operand, display_value, operator } = calculator
     const value_of_input = parseFloat(display_value);
@@ -43,6 +47,7 @@ function handle_operator(next_operator) {
     calculator.operator = next_operator;
 }
 
+//Does math.
 const perform_calculation = {
     '/': (first_operand, second_operand) => first_operand / second_operand,
     '*': (first_operand, second_operand) => first_operand * second_operand,
@@ -51,6 +56,7 @@ const perform_calculation = {
     '=': (first_operand, second_operand) => second_operand
 };
 
+//Handles reset on AC, verifies and resets values to null and false
 function calculator_reset() {
     calculator.display_value = '0';
     calculator.first_operand = null;
@@ -58,11 +64,13 @@ function calculator_reset() {
     calculator.operator = null;
 }
 
+//Updates the display based on changes to display_value
 function update_display() {
     const display = document.querySelector('.calculator-screen');
     display.value = calculator.display_value;
 }
 
+//Watches for button clicks
 update_display();
 const keys = document.querySelector('.calculator-keys');
 keys.addEventListener('click', (event) => {
