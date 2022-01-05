@@ -10,6 +10,18 @@
     </head>
 
     <body>
-        
+
+        <div id='jsx'></div>
+
+        <script type='text/babel'>
+            class Greeting extends React.Component {
+                render() {
+                    return <h1>Heading One</h1>
+                }
+            }
+
+            ReactDOM.render(<Greeting />, document.getElementById('jsx'))
+        </script>
+
     </body>
 </html>
