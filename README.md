@@ -11,19 +11,19 @@ This repository includes all projects and work in progress done for TA's JavaScr
 ## Projects
 
 - [Calculator Project](https://github.com/XeroxSinner/JavaScript-Projects/tree/main/Basic%20JavaScript%20Projects/Calculator)
-- Project2_functions
-- Project3_math_operators
-- Project4_dictionaries
+- [Simple Pizza Menu Project](https://github.com/XeroxSinner/JavaScript-Projects/tree/main/Basic%20JavaScript%20Projects/Pizza_Project)
+- [Tic Tac Toe](https://github.com/XeroxSinner/JavaScript-Projects/tree/main/Basic%20JavaScript%20Projects/TicTacToe)
+- [Simple To-Do List](https://github.com/XeroxSinner/JavaScript-Projects/tree/main/Basic%20JavaScript%20Projects/ToDo_App)
 
 
-<h3>Project1_expressions_alert</h3>
-  - Basic Assignment work for JavaScript module, contains basic index.html as well as a separate, commented .js
+<h3>Calculator Project</h3>
+  - A simple four-function calculator leveraging basic Javascript for functionality.
   
-<h3>Project2_functions</h3>
-  - Basic Assignment work for JavaScript module
+<h3>Simple Pizza Menu Project</h3>
+  - A short project assigning and adding values to calculate the total for a single pizza.
 
-<h3>Project3_math_operators</h3>
-  - Basic Assignment work for Javascript module relating to math operations
+<h3>Tic Tac Toe</h3>
+  - Play a short game of Tic Tac Toe against the computer. Machine's moves are randomized, but celebrate your wins with an award alert and get your co-worker's attention as you place your marker. Is that a Discord chirp I hear..?
   
-<h3>Project4_dictionaries</h3>
-  - Basic Assignment work for Javascript modlue relating to dictionaries/KVPs
+<h3>To-Do List</h3>
+  - Clean web-based To-Do list allowing for user input and the satisfaction of clicking the X and removing things from your list.
