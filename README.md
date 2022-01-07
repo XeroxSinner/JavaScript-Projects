@@ -10,7 +10,7 @@ This repository includes all projects and work in progress done for TA's JavaScr
 
 ## Projects
 
-- Project1_expressions_alert
+- [Calculator Project](https://github.com/XeroxSinner/JavaScript-Projects/tree/main/Basic%20JavaScript%20Projects/Calculator)
 - Project2_functions
 - Project3_math_operators
 - Project4_dictionaries
